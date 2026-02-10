@@ -1163,6 +1163,48 @@ footer {
     margin-bottom: 30px;
 }
 
+/* Mobile Adjustments (Button & Blocks) */
+@media (max-width: 767px) {
+
+    /* Smaller Buttons */
+    .btn {
+        padding: 10px 24px !important;
+        font-size: 15px !important;
+    }
+
+    .btn-lg {
+        padding: 12px 28px !important;
+        font-size: 16px !important;
+    }
+
+    /* Smaller Feature Blocks */
+    .glass-card {
+        padding: 24px 20px !important;
+    }
+
+    .card-icon-box {
+        width: 56px !important;
+        height: 56px !important;
+        font-size: 24px !important;
+        border-radius: 14px !important;
+        margin-bottom: 16px !important;
+    }
+
+    .glass-card h3 {
+        font-size: 20px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .glass-card p {
+        font-size: 15px !important;
+    }
+
+    /* Adjust Pricing Cards padding too */
+    .pricing-card {
+        padding: 24px 20px !important;
+    }
+}
+
 /* Mobile Menu Overlay */
 @media (max-width: 1023px) {
     .nav-menu {
