@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Configuration
-const BASE_URL = 'https://nikdinfo.github.io/myvpnsecure'; // Change this to your actual domain
+const BASE_URL = 'https://myvpnsecure.ru'; // Change this to your actual domain
 const OUTPUT_FILE = 'sitemap.xml';
 const IGNORE_DIRS = ['.git', 'css', 'images', 'scripts', 'node_modules'];
 const IGNORE_FILES = ['404.html'];
@@ -46,16 +46,16 @@ function generateSitemap() {
     const rootDir = process.cwd(); // Run from project root
     // Handle running from scripts folder
     const targetDir = rootDir.endsWith('scripts') ? path.join(rootDir, '..') : rootDir;
-    
+
     // We want to scan the project root (where index.html is)
     // Assuming this script is in /scripts, and we run `node scripts/generate_sitemap.js` from root
-    
+
     // Adjust logic: scan the directory containing this script's parent
     // or just assume run from root.
     // Let's assume run from root.
-    
+
     const allFiles = scanDir(targetDir);
-    
+
     let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
     xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
 
@@ -64,11 +64,19 @@ function generateSitemap() {
     allFiles.forEach(absolutePath => {
         // Convert strict path to relative URL path
         let relativePath = path.relative(targetDir, absolutePath).replace(/\\/g, '/');
-        
+
         // Skip the script itself if it was somehow included (unlikely with .html filter)
         if (relativePath.startsWith('scripts/')) return;
 
-        const url = `${BASE_URL}/${relativePath}`;
+        // Clean URL logic: remove /index.html and ensure trailing slash for directories
+        let urlPath = relativePath;
+        if (urlPath === 'index.html') {
+            urlPath = '';
+        } else if (urlPath.endsWith('/index.html')) {
+            urlPath = urlPath.replace(/\/index\.html$/, '/');
+        }
+
+        const url = `${BASE_URL}/${urlPath}`;
         const priority = getPriority(relativePath);
         const freq = getChangeFreq(relativePath);
 
