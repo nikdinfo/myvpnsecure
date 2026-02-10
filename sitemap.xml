@@ -13,7 +13,13 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://nikdinfo.github.io/myvpnsecure/vpn-dlya-pk/index.html</loc>
+        <loc>https://nikdinfo.github.io/myvpnsecure/sitemap.html</loc>
+        <lastmod>2026-02-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://nikdinfo.github.io/myvpnsecure/vpn-dlya-android/huawei/index.html</loc>
         <lastmod>2026-02-10</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -31,15 +37,9 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://nikdinfo.github.io/myvpnsecure/vpn-dlya-huawei/index.html</loc>
+        <loc>https://nikdinfo.github.io/myvpnsecure/vpn-dlya-pk/index.html</loc>
         <lastmod>2026-02-10</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://nikdinfo.github.io/myvpnsecure/sitemap.html</loc>
-        <lastmod>2026-02-10</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
     </url>
 </urlset>
