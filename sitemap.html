@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта Сайта - MyVPN</title>
+    <meta name="description" content="Карта сайта MyVPN. Навигация по всем разделам и страницам сервиса.">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .sitemap-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            /* Removed glass-card styling */
+        }
+
+        .sitemap-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sitemap-list>li {
+            margin-bottom: 25px;
+        }
+
+        .sitemap-link {
+            font-size: 24px;
+            color: #007AFF;
+            text-decoration: underline;
+            font-weight: 600;
+            display: inline-block;
+            cursor: pointer;
+            /* Force pointer cursor */
+            position: relative;
+            /* Ensure z-index works if needed */
+            z-index: 10;
+        }
+
+        .sitemap-link:hover {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        .sitemap-sublist {
+            list-style-type: disc;
+            padding-left: 40px;
+            margin-top: 10px;
+        }
+
+        .sitemap-sublist li {
+            margin-bottom: 15px;
+        }
+
+        .sitemap-sublink {
+            font-size: 18px;
+            color: #007AFF;
+            text-decoration: underline;
+            cursor: pointer;
+            position: relative;
+            z-index: 10;
+        }
+
+        .sitemap-sublink:hover {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        /* Ensure no overriding styles from style.css break this */
+        section.section-bg {
+            background: transparent;
+            /* Remove section background if needed, but keeping generally ok */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="logo">MyVPN</a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="vpn-dlya-pk/index.html" class="nav-link">Для ПК</a>
+                <div class="nav-item-dropdown">
+                    <a href="vpn-dlya-android/index.html" class="nav-link">Для Android <i class="fas fa-chevron-down"
+                            style="font-size: 12px; margin-left: 5px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="vpn-dlya-huawei/index.html" class="dropdown-item"><i class="fas fa-mobile-alt"
+                                style="margin-right: 8px; color: #cf0a2c;"></i>Huawei</a>
+                    </div>
+                </div>
+                <a href="vpn-dlya-iphone/index.html" class="nav-link">Для iPhone</a>
+                <a href="rossiyskiy-vpn/index.html" class="nav-link">Российский VPN</a>
+                <a href="index.html#tarify" class="nav-link">Тарифы</a>
+            </nav>
+            <a href="https://tuvp1.ru/5Sg5nF?sub1=myvpnsecure&sub2=sitemap" class="btn btn-primary"
+                style="padding: 10px 24px;">Скачать</a>
+            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sitemap Hero -->
+        <section class="hero" style="min-height: 20vh; padding-top: 120px; padding-bottom: 20px;">
+            <div class="container">
+                <h1 class="animate-up">Карта Сайта</h1>
+            </div>
+        </section>
+
+        <!-- Links List -->
+        <section>
+            <div class="container">
+                <!-- Removed glass-card class -->
+                <div class="sitemap-container">
+
+                    <ul class="sitemap-list">
+                        <li>
+                            <a href="index.html" class="sitemap-link">Главная страница</a>
+                        </li>
+                        <li>
+                            <a href="index.html#tarify" class="sitemap-link">Тарифы и Цены</a>
+                        </li>
+                        <li>
+                            <a href="rossiyskiy-vpn/index.html" class="sitemap-link">Российский VPN</a>
+                        </li>
+                        <li>
+                            <h3 style="margin-bottom: 15px; color: #1d1d1f; margin-top: 30px; font-size: 28px;">
+                                Платформы</h3>
+                            <ul class="sitemap-sublist">
+                                <li>
+                                    <a href="vpn-dlya-pk/index.html" class="sitemap-sublink">VPN для Windows (ПК)</a>
+                                </li>
+                                <li>
+                                    <a href="vpn-dlya-android/index.html" class="sitemap-sublink">VPN для Android</a>
+                                </li>
+                                <li>
+                                    <a href="vpn-dlya-iphone/index.html" class="sitemap-sublink">VPN для iPhone
+                                        (iOS)</a>
+                                </li>
+                                <li>
+                                    <a href="vpn-dlya-huawei/index.html" class="sitemap-sublink">VPN для Huawei</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="grid-4" style="text-align: left;">
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="index.html#tarify">Тарифы</a></li>
+                        <li><a href="rossiyskiy-vpn/index.html">РФ VPN</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Устройства</h4>
+                    <ul>
+                        <li><a href="vpn-dlya-android/index.html">Android</a></li>
+                        <li><a href="vpn-dlya-iphone/index.html">iPhone</a></li>
+                        <li><a href="vpn-dlya-pk/index.html">Windows</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Поддержка</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">База знаний</a></li>
+                        <li><a href="sitemap.html">Карта сайта</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Компания</h4>
+                    <ul>
+                        <li><a href="#">Правила</a></li>
+                        <li><a href="#">Конфиденциальность</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                style="border-top: 1px solid #333; margin-top: 40px; padding-top: 20px; text-align: center; color: #666; font-size: 13px;">
+                &copy; 2026 MyVPN. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
